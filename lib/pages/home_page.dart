@@ -37,55 +37,82 @@ class _HomePageState extends State<HomePage> {
         } else if (state is DataLoaded) {
           final MainDataModel data = state.data; // this is your MainDataModel
 
-          return SingleChildScrollView(
-            child: Column(
-              children: [
-                BannerWidget(data: data),
-                SizedBox(height: 20),
-                FindYourRequirmentsCategoryWidget(data: data),
-                SizedBox(height: 20),
+          return RefreshIndicator(
+            onRefresh: () async {
+              context.read<DataBloc>().add(FetchDataEvent());
+            },
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  BannerWidget(data: data),
+                  const SizedBox(height: 20),
+                  FindYourRequirmentsCategoryWidget(data: data),
+                  const SizedBox(height: 20),
 
-                MenuCardGridWidget(dataModel: data),
-                SizedBox(height: 20),
-                SectionMainTitleWidget(
-                  title: data.data.sectionTitles.first.section1Name,
-                ),
+                  MenuCardGridWidget(dataModel: data),
+                  const SizedBox(height: 20),
+                  SectionMainTitleWidget(
+                    title: data.data.sectionTitles.first.section1Name,
+                  ),
 
-                SizedBox(height: 20),
-                Section1TrendingNewsWidget(dataModel: data),
-                SizedBox(height: 20),
-                SectionMainTitleWidget(
-                  title: data.data.sectionTitles.first.section2Name,
-                ),
+                  const SizedBox(height: 20),
+                  Section1TrendingNewsWidget(dataModel: data),
+                  const SizedBox(height: 20),
+                  SectionMainTitleWidget(
+                    title: data.data.sectionTitles.first.section2Name,
+                  ),
 
-                SizedBox(height: 20),
-                Section2VideoCarouselWidget(trailers: data),
-                SizedBox(height: 20),
-                SectionMainTitleWidget(
-                  title: data.data.sectionTitles.first.section3Name,
-                ),
+                  const SizedBox(height: 20),
+                  Section2VideoCarouselWidget(trailers: data),
+                  const SizedBox(height: 20),
+                  SectionMainTitleWidget(
+                    title: data.data.sectionTitles.first.section3Name,
+                  ),
 
-                SizedBox(height: 20),
-                Section3HappeningThisWeekWidget(dataModel: data),
-                SizedBox(height: 20),
-                SectionMainTitleWidget(
-                  title: data.data.sectionTitles.first.section5Name,
-                ),
+                  const SizedBox(height: 20),
+                  Section3HappeningThisWeekWidget(dataModel: data),
+                  const SizedBox(height: 20),
+                  SectionMainTitleWidget(
+                    title: data.data.sectionTitles.first.section5Name,
+                  ),
 
-                SizedBox(height: 20),
-                Section5RecommendedMoviesWidget(dataModel: data),
-                SizedBox(height: 20),
-                SectionMainTitleWidget(
-                  title: data.data.sectionTitles.first.section4Name,
-                ),
+                  const SizedBox(height: 20),
+                  Section5RecommendedMoviesWidget(dataModel: data),
+                  const SizedBox(height: 20),
+                  SectionMainTitleWidget(
+                    title: data.data.sectionTitles.first.section4Name,
+                  ),
 
-                SizedBox(height: 20),
-                Section4NewMusicReleasesWidget(dataModel: data),
-              ],
+                  const SizedBox(height: 20),
+                  Section4NewMusicReleasesWidget(dataModel: data),
+                ],
+              ),
             ),
           );
         } else if (state is DataError) {
-          return Center(child: Text("Failed to load: ${state.message}"));
+          return Center(
+            child: SizedBox(
+              height: 300,
+              width: 300,
+              child: Card(
+                color: Colors.white,
+                elevation: 10,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.error, color: Colors.red),
+
+                    Text(
+                      "something went wrong",
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    SizedBox(height: 20),
+                    Center(child: Text("message : ${state.message}")),
+                  ],
+                ),
+              ),
+            ),
+          );
         } else {
           return const SizedBox(); // or a placeholder
         }
