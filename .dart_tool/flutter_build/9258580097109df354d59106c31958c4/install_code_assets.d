@@ -1,0 +1,1 @@
+ /Users/gokulks/Documents/GitHub/movie_buzz/.dart_tool/flutter_build/9258580097109df354d59106c31958c4/native_assets.json: 

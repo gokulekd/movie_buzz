@@ -1,0 +1,1 @@
+/Users/gokulks/Documents/GitHub/movie_buzz/build/app/intermediates/cxx/Debug/6l4b4x60/obj/arm64-v8a
