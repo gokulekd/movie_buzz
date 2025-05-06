@@ -28,6 +28,7 @@ INJECTED from /Users/gokulks/Documents/GitHub/movie_buzz/android/app/src/debug/A
 INJECTED from /Users/gokulks/Documents/GitHub/movie_buzz/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 MERGED from [:wakelock_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/wakelock_plus/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [:package_info_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/package_info_plus/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:connectivity_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/connectivity_plus/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] /Users/gokulks/Documents/GitHub/movie_buzz/build/path_provider_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [:sqflite_android] /Users/gokulks/Documents/GitHub/movie_buzz/build/sqflite_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [:video_player_android] /Users/gokulks/Documents/GitHub/movie_buzz/build/video_player_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
@@ -101,6 +102,8 @@ MERGED from [:wakelock_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/wa
 MERGED from [:wakelock_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/wakelock_plus/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:package_info_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/package_info_plus/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:package_info_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/package_info_plus/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/connectivity_plus/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/connectivity_plus/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/gokulks/Documents/GitHub/movie_buzz/build/path_provider_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /Users/gokulks/Documents/GitHub/movie_buzz/build/path_provider_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:sqflite_android] /Users/gokulks/Documents/GitHub/movie_buzz/build/sqflite_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
@@ -188,11 +191,13 @@ MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/gokulks/.gradle/cac
 	android:minSdkVersion
 		INJECTED from /Users/gokulks/Documents/GitHub/movie_buzz/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [androidx.media3:media3-common:1.4.1] /Users/gokulks/.gradle/caches/8.10.2/transforms/784c75164cbdfbd8765b78e0df7f6470/transformed/jetified-media3-common-1.4.1/AndroidManifest.xml:22:5-79
+ADDED from [:connectivity_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/connectivity_plus/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-79
+MERGED from [androidx.media3:media3-common:1.4.1] /Users/gokulks/.gradle/caches/8.10.2/transforms/784c75164cbdfbd8765b78e0df7f6470/transformed/jetified-media3-common-1.4.1/AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-common:1.4.1] /Users/gokulks/.gradle/caches/8.10.2/transforms/784c75164cbdfbd8765b78e0df7f6470/transformed/jetified-media3-common-1.4.1/AndroidManifest.xml:22:5-79
 MERGED from [androidx.media3:media3-exoplayer:1.4.1] /Users/gokulks/.gradle/caches/8.10.2/transforms/78ff6c8884fea0892664a420c0bc3af4/transformed/jetified-media3-exoplayer-1.4.1/AndroidManifest.xml:22:5-79
 MERGED from [androidx.media3:media3-exoplayer:1.4.1] /Users/gokulks/.gradle/caches/8.10.2/transforms/78ff6c8884fea0892664a420c0bc3af4/transformed/jetified-media3-exoplayer-1.4.1/AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from [androidx.media3:media3-common:1.4.1] /Users/gokulks/.gradle/caches/8.10.2/transforms/784c75164cbdfbd8765b78e0df7f6470/transformed/jetified-media3-common-1.4.1/AndroidManifest.xml:22:22-76
+		ADDED from [:connectivity_plus] /Users/gokulks/Documents/GitHub/movie_buzz/build/connectivity_plus/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-76
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.2.0] /Users/gokulks/.gradle/caches/8.10.2/transforms/aed2861b2b6894f7067df3f3f96b791f/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
 	android:required

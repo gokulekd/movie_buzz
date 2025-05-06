@@ -74,6 +74,18 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "connectivity_plus",
+      "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/connectivity_plus-6.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "connectivity_plus_platform_interface",
+      "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/connectivity_plus_platform_interface-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "crypto",
       "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/crypto-3.0.6",
       "packageUri": "lib/",
@@ -96,6 +108,24 @@
       "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/dbus-0.7.11",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "dio",
+      "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/dio-5.8.0+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "dio_web_adapter",
+      "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/dio_web_adapter-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "equatable",
+      "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/equatable-2.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "extended_image",
@@ -244,6 +274,12 @@
     {
       "name": "nested",
       "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "nm",
+      "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/nm-0.5.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -447,7 +483,7 @@
     },
     {
       "name": "video_player_android",
-      "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/video_player_android-2.8.2",
+      "rootUri": "file:///Users/gokulks/.pub-cache/hosted/pub.dev/video_player_android-2.8.3",
       "packageUri": "lib/",
       "languageVersion": "3.6"
     },
@@ -524,7 +560,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-05-06T06:15:58.967411Z",
+  "generated": "2025-05-06T19:16:20.206675Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///Users/gokulks/development/flutter",

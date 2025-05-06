@@ -26,8 +26,9 @@ com.example.movie_buzz.app-resValues-24 /Users/gokulks/Documents/GitHub/movie_bu
 com.example.movie_buzz.app-packageDebugResources-25 /Users/gokulks/Documents/GitHub/movie_buzz/build/app/intermediates/incremental/debug/packageDebugResources/merged.dir
 com.example.movie_buzz.app-packageDebugResources-26 /Users/gokulks/Documents/GitHub/movie_buzz/build/app/intermediates/incremental/debug/packageDebugResources/stripped.dir
 com.example.movie_buzz.app-debug-27 /Users/gokulks/Documents/GitHub/movie_buzz/build/app/intermediates/merged_res/debug/mergeDebugResources
-com.example.movie_buzz.app-debug-28 /Users/gokulks/Documents/GitHub/movie_buzz/build/package_info_plus/intermediates/packaged_res/debug/packageDebugResources
-com.example.movie_buzz.app-debug-29 /Users/gokulks/Documents/GitHub/movie_buzz/build/path_provider_android/intermediates/packaged_res/debug/packageDebugResources
-com.example.movie_buzz.app-debug-30 /Users/gokulks/Documents/GitHub/movie_buzz/build/sqflite_android/intermediates/packaged_res/debug/packageDebugResources
-com.example.movie_buzz.app-debug-31 /Users/gokulks/Documents/GitHub/movie_buzz/build/video_player_android/intermediates/packaged_res/debug/packageDebugResources
-com.example.movie_buzz.app-debug-32 /Users/gokulks/Documents/GitHub/movie_buzz/build/wakelock_plus/intermediates/packaged_res/debug/packageDebugResources
+com.example.movie_buzz.app-debug-28 /Users/gokulks/Documents/GitHub/movie_buzz/build/connectivity_plus/intermediates/packaged_res/debug/packageDebugResources
+com.example.movie_buzz.app-debug-29 /Users/gokulks/Documents/GitHub/movie_buzz/build/package_info_plus/intermediates/packaged_res/debug/packageDebugResources
+com.example.movie_buzz.app-debug-30 /Users/gokulks/Documents/GitHub/movie_buzz/build/path_provider_android/intermediates/packaged_res/debug/packageDebugResources
+com.example.movie_buzz.app-debug-31 /Users/gokulks/Documents/GitHub/movie_buzz/build/sqflite_android/intermediates/packaged_res/debug/packageDebugResources
+com.example.movie_buzz.app-debug-32 /Users/gokulks/Documents/GitHub/movie_buzz/build/video_player_android/intermediates/packaged_res/debug/packageDebugResources
+com.example.movie_buzz.app-debug-33 /Users/gokulks/Documents/GitHub/movie_buzz/build/wakelock_plus/intermediates/packaged_res/debug/packageDebugResources

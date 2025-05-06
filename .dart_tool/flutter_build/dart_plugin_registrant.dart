@@ -12,6 +12,7 @@ import 'package:video_player_android/video_player_android.dart';
 import 'package:path_provider_foundation/path_provider_foundation.dart';
 import 'package:sqflite_darwin/sqflite_darwin.dart';
 import 'package:video_player_avfoundation/video_player_avfoundation.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path_provider_linux/path_provider_linux.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
@@ -85,6 +86,15 @@ class _PluginRegistrant {
       }
 
     } else if (Platform.isLinux) {
+      try {
+        ConnectivityPlusLinuxPlugin.registerWith();
+      } catch (err) {
+        print(
+          '`connectivity_plus` threw an error: $err. '
+          'The app may not function as expected until you remove this plugin from pubspec.yaml'
+        );
+      }
+
       try {
         PackageInfoPlusLinuxPlugin.registerWith();
       } catch (err) {
