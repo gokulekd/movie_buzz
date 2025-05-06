@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:movie_buzz/model/main_data_model.dart';
 
-class Section1WidgetTrendingNewsWidget extends StatelessWidget {
+class Section1TrendingNewsWidget extends StatelessWidget {
   final MainDataModel dataModel;
 
-  const Section1WidgetTrendingNewsWidget({super.key, required this.dataModel});
+  const Section1TrendingNewsWidget({super.key, required this.dataModel});
 
   @override
   Widget build(BuildContext context) {

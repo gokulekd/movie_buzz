@@ -7,7 +7,7 @@ import 'package:movie_buzz/model/main_data_model.dart';
 import 'package:movie_buzz/pages/widgets/banner_widget.dart';
 import 'package:movie_buzz/pages/widgets/find_your_requirment_category_widget.dart';
 import 'package:movie_buzz/pages/widgets/menu_card_grid_widget.dart';
-import 'package:movie_buzz/pages/widgets/section1_widget_trending_news_widget.dart';
+import 'package:movie_buzz/pages/widgets/section1_trending_news_widget.dart';
 import 'package:movie_buzz/pages/widgets/section2_video_carousel_widget.dart';
 import 'package:movie_buzz/pages/widgets/section3_happening_this_week_widget.dart';
 import 'package:movie_buzz/pages/widgets/section4_new_music_releases_widget.dart';
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
                 ),
 
                 SizedBox(height: 20),
-                Section1WidgetTrendingNewsWidget(dataModel: data),
+                Section1TrendingNewsWidget(dataModel: data),
                 SizedBox(height: 20),
                 SectionMainTitleWidget(
                   title: data.data.sectionTitles.first.section2Name,

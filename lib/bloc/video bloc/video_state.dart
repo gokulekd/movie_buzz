@@ -1,36 +1,25 @@
 import 'package:video_player/video_player.dart';
 
-class VideoState {
-  final List<VideoPlayerController> controllers;
-  final int currentPlayingIndex;
+class VideoCarouselState {
+  final Map<int, VideoPlayerController> controllers;
   final bool isLoading;
-  final bool hasError;
+  final int currentPlayingIndex;
 
-  VideoState({
+  VideoCarouselState({
     required this.controllers,
-    required this.currentPlayingIndex,
     required this.isLoading,
-    this.hasError = false,
+    required this.currentPlayingIndex,
   });
 
-  factory VideoState.initial() => VideoState(
-    controllers: [],
-    currentPlayingIndex: -1,
-    isLoading: true,
-    hasError: false,
-  );
-
-  VideoState copyWith({
-    List<VideoPlayerController>? controllers,
-    int? currentPlayingIndex,
+  VideoCarouselState copyWith({
+    Map<int, VideoPlayerController>? controllers,
     bool? isLoading,
-    bool? hasError,
+    int? currentPlayingIndex,
   }) {
-    return VideoState(
+    return VideoCarouselState(
       controllers: controllers ?? this.controllers,
-      currentPlayingIndex: currentPlayingIndex ?? this.currentPlayingIndex,
       isLoading: isLoading ?? this.isLoading,
-      hasError: hasError ?? this.hasError,
+      currentPlayingIndex: currentPlayingIndex ?? this.currentPlayingIndex,
     );
   }
 }

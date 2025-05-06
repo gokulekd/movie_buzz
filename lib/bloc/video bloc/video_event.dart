@@ -1,21 +1,13 @@
-abstract class VideoEvent {}
+abstract class VideoCarouselEvent {}
 
-class LoadVideos extends VideoEvent {
-  final List<String> videoUrls;
+class InitializeVideos extends VideoCarouselEvent {}
 
-  LoadVideos(this.videoUrls);
-}
-
-class PlayVideoAtIndex extends VideoEvent {
+class PlayVideoAtIndex extends VideoCarouselEvent {
   final int index;
-
   PlayVideoAtIndex(this.index);
 }
 
-class TogglePlayPause extends VideoEvent {
+class TogglePlayPause extends VideoCarouselEvent {
   final int index;
-
   TogglePlayPause(this.index);
 }
-
-class DisposeVideo extends VideoEvent {}
