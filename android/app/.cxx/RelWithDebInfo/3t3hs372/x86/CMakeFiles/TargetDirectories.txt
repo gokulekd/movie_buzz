@@ -1,0 +1,2 @@
+/Users/gokulks/Documents/GitHub/movie_buzz/android/app/.cxx/RelWithDebInfo/3t3hs372/x86/CMakeFiles/edit_cache.dir
+/Users/gokulks/Documents/GitHub/movie_buzz/android/app/.cxx/RelWithDebInfo/3t3hs372/x86/CMakeFiles/rebuild_cache.dir

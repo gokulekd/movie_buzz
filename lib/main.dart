@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:movie_buzz/bloc/data%20bloc/data_bloc.dart';
-import 'package:movie_buzz/bloc/navigation%20bloc/navigation_bloc.dart';
-import 'package:movie_buzz/bottom%20navigation%20bar/custom_bottom_nav.dart';
-import 'package:movie_buzz/pages/calendar_page.dart';
-import 'package:movie_buzz/pages/favourite_page.dart';
-import 'package:movie_buzz/pages/home_page.dart';
-import 'package:movie_buzz/pages/profile_page.dart';
-import 'package:movie_buzz/pages/search_page.dart';
-import 'package:movie_buzz/repository/data_repository.dart';
+import 'package:movie_buzz/core/network/api_client.dart';
+import 'package:movie_buzz/logic/data_bloc/data_bloc.dart';
+import 'package:movie_buzz/logic/navigation_bloc/navigation_bloc.dart';
+import 'package:movie_buzz/presentation/components/bottom_navigation_bar/custom_bottom_nav.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized(); // Add this line
@@ -17,18 +12,11 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
-  final List<Widget> pages = [
-    HomePage(),
-    SearchPage(),
-    CalendarPage(),
-    FavouritePage(),
-    ProfilePage(),
-  ];
   @override
   Widget build(BuildContext context) {
-    final dataRepository = DataRepository();
+    final dataRepository = ApiClient();
 
     return MultiBlocProvider(
       providers: [
