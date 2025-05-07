@@ -39,30 +39,56 @@ class Section2VideoCarouselWidget extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20),
-                        child: ExtendedImage.network(
-                          loadStateChanged: (state) {
-                            switch (state.extendedImageLoadState) {
-                              case LoadState.loading:
-                                return Container(
-                                  color: Colors.grey[100],
-                                  child: const Center(),
-                                );
-                              case LoadState.completed:
-                                return null; // Return null to display the image
-                              case LoadState.failed:
-                                return Container(
-                                  color: Colors.grey[200],
-                                  child: const Center(
-                                    child: Icon(Icons.error, color: Colors.red),
-                                  ),
-                                );
-                            }
-                          },
-                          cache: true,
+                        child: Stack(
+                          children: [
+                            ExtendedImage.network(
+                              loadStateChanged: (state) {
+                                switch (state.extendedImageLoadState) {
+                                  case LoadState.loading:
+                                    return Container(
+                                      color: Colors.grey[100],
+                                      child: const Center(),
+                                    );
+                                  case LoadState.completed:
+                                    return null; // Return null to display the image
+                                  case LoadState.failed:
+                                    return Container(
+                                      color: Colors.grey[200],
+                                      child: const Center(
+                                        child: Icon(
+                                          Icons.error,
+                                          color: Colors.red,
+                                        ),
+                                      ),
+                                    );
+                                }
+                              },
+                              cache: true,
 
-                          item.media ?? '',
-                          fit: BoxFit.cover,
-                          width: double.infinity,
+                              item.media ?? '',
+                              fit: BoxFit.cover,
+                              width: double.infinity,
+                            ),
+                            Positioned(
+                              bottom: 0,
+                              left: 0,
+                              right: 0,
+                              child: Container(
+                                height: 130,
+                                decoration: const BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [
+                                      Colors.transparent,
+                                      Colors.white54,
+                                      Colors.white,
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     );
@@ -113,7 +139,7 @@ class Section2VideoCarouselWidget extends StatelessWidget {
                                         begin: Alignment.topCenter,
                                         end: Alignment.bottomCenter,
                                         colors: [
-                                          Colors.transparent,
+                                          Color.fromARGB(0, 88, 86, 86),
                                           Colors.white54,
                                           Colors.white,
                                         ],
