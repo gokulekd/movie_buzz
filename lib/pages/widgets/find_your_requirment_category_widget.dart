@@ -27,25 +27,28 @@ class FindYourRequirmentsCategoryWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: Wrap(
-              spacing: 8.0, // horizontal spacing between cards
-              runSpacing: 8.0, // vertical spacing between cards
+              spacing: 5.0, // horizontal spacing between cards
+              runSpacing: 5.0, // vertical spacing between cards
               children: [
                 ...data.data.category.map(
-                  (item) => Card(
-                    elevation: 5,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12.0,
-                        vertical: 8.0,
+                  (item) => InkWell(
+                    onTap: () {},
+                    child: Card(
+                      elevation: 5,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
-                      child: Text(
-                        item.name,
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 8.0,
+                          vertical: 8.0,
+                        ),
+                        child: Text(
+                          item.name,
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
